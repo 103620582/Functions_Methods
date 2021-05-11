@@ -4,24 +4,14 @@ namespace FunctionsMethods
 {
     class Program
     {
-
         static void Main(string[] args)
         {
-            Welcome();
-            NiceDay();
-        
+            Sum(15, 16);
         }
+            static void Sum(int num1, int num2) {
 
-        public static void Welcome() {
-            Console.WriteLine("What's ya name?");
-            string name = Console.ReadLine();
-
-            Console.WriteLine("Welcome friend" + " " + name + "!");
-        }
-
-        public static void NiceDay() {
-            Console.WriteLine("Have a nice day!");
-        }
-    
+                int sum = num1 + num2;
+                Console.WriteLine(sum);
+            }
     }
 }
